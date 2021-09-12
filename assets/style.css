@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+
+}
+#background{
+    height: 100%;
+    background-image: url(img/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+#dino{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+} 
+#dino img{
+    margin-top: 35%;
+}
+.btn{
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 ;
+    padding: 0;
+    margin: 0;
+}
+ 
