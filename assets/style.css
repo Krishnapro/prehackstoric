@@ -2,32 +2,40 @@
     margin: 0;
     padding: 0;
 }
-body,html{
+/* body,html{
     height: 100%;
 
-}
-#background{
-    height: 100%;
-    background-image: url(img/forest.jpg);
-    background-repeat: no-repeat;
+} */
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/sky2.jpg);
     background-size: cover;
     background-position: center;
+    position: relative;
+    overflow-x: hidden;
     
 }
-#dino{
+.dino{
+    height: 200px;
+    width: 10000px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    background-image: url(img/forest-move-removebg.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: dino 20s linear infinite;
 } 
-#dino img{
-    margin-top: 35%;
+@keyframes dino
+{
+    100%{
+        transform: translateX(-3400px);
+    }
 }
-.btn{
-    background-color: transparent;
-    cursor: pointer;
-    box-shadow: 0 ;
-    padding: 0;
-    margin: 0;
+.fly-dino{
+    /* background-image: url(img/flying-dino.png); */
+    width: 400px;
 }
- 
